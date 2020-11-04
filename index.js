@@ -234,7 +234,7 @@ else if ((user=== "Paper" && computer === "Rock") || (user=== "Scissors" && comp
 
 else {
   return `you lose! ${user} vs ${computer}`
-}
+} 
 
 }
 
@@ -258,10 +258,13 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+   return kilometers*0.621371;
   }
 
+  console.log(miles(1))
+
+  
 
 
 //Task 5b - Feet to CM
@@ -272,11 +275,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm) {
+  return cm*0.0328084;
   }
  
-
+  console.log(feet(2000))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -308,11 +311,30 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(numGrade){
+ 
+  if (numGrade >= 90){
+    return "A";
+  }
+
+  else if (numGrade>= 80){
+    return "B";
+  }
+
+  else if (numGrade >= 70){
+    return "c";
+  }
+
+  else if (numGrade >= 60){
+    return "D";
+  }
+
+  else {
+    return "F";
+  }
   }
   
-  
+  console.log(grade(84))
   
   
 
