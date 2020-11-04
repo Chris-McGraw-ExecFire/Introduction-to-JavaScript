@@ -147,10 +147,10 @@ function hungryDog(weightLBS, ageYears){
     if (ageYears<=(4/12)){
       return .1*weightLBS;
     }
-    if (ageYears<=(7/12)){
+    else if (ageYears<=(7/12)){
       return .05*weightLBS;
     }
-    if (ageYears<(1)){
+    else if (ageYears<(1)){
       return .04*weightLBS;
     }
 
@@ -160,13 +160,13 @@ function hungryDog(weightLBS, ageYears){
     if (weightLBS<=5){
       return .05 * weightLBS;
     }
-    if (weightLBS<=10){
+    else if (weightLBS<=10){
       return .04 * weightLBS;
     }
-    if (weightLBS<=10){
+    else if (weightLBS<=10){
       return .04*weightLBS;
     }
-    if (weightLBS<=15){
+    else if (weightLBS<=15){
       return (.03*weightLBS);
     }
     else{
@@ -196,27 +196,55 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+function getRandomInt(min, max) {
+    //The maximum is exclusive and the minimum is inclusive
+  min = Math.ceil(-1);
+  max = Math.floor(2);
+   if((Math.floor(Math.random() * (max - min) + min))===-1){
+    return "Rock";
+  }
+
+  else if ((Math.floor(Math.random() * (max - min) + min))===0){
+    return "Scissors";
+  }
+  else {
+    return "Paper";
+  }
+
+}
 
 
 function game(user, computer){
 
-if (user===computer){
- return "it's a tie";
+//  let rock = -1
+//   let paper = 1
+//  let Scissors = 0
+
+if ((user=== "Paper" && computer === "Paper") || (user=== "Scissors" && computer === "Scissors" ) || (user=== "Rock" && computer === "Rock"))
+{
+  return `it's a tie ${user} vs ${computer}`;
+ }
+
+
+else if ((user=== "Paper" && computer === "Rock") || (user=== "Scissors" && computer === "Paper") || (user=== "Rock" && computer === "Scissors")){
+
+  return `you win! ${user} vs ${computer}`;
 }
 
-if (user===1 && computer===1||user===0 && computer===1||user===-1 && computer===0){
- return "you win!";
-}
 
-if (user===-1 && computer===1 ||user===0 && computer===-1||user===1 && computer===0){
- return "you lose!";
+else {
+  return `you lose! ${user} vs ${computer}`
 }
 
 }
 
 
+console.log(game(getRandomInt(),(getRandomInt())));
 
-console.log(game(1,Math.random(-1,0,1)));
+
+
+
+
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
