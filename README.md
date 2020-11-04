@@ -26,7 +26,7 @@ Exercises are outlined in the `index.js` file, please read the instructions care
 
 ### Task 1: Set up Project
 
-Using VSCode and Command Line:
+<!-- Using VSCode and Command Line:
 
 
 1. Fork the repo
@@ -34,7 +34,7 @@ Using VSCode and Command Line:
 3. cd into your repo and create a branch with your first and last name
 4. open the terminal in your vs code and type `npm install`
 5. next type `npm run test:watch` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit -->
 
 ### Task 2: MVP
 

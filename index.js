@@ -16,8 +16,24 @@ Do the following:
    2. Return true if age is 18 or higher
 
    HINT: no function required
-*/
 
+
+   */
+
+  let votingAge = 18
+  if (votingAge >= 18)
+    {
+      // return "True";
+      console.log (true)
+    }
+
+    else 
+    {
+      // return "False";
+      console.log (false)
+    }
+
+  
 
 
 /*
@@ -31,6 +47,19 @@ Do the following:
    HINT: no function required
 */
 
+let a = 4
+let b = -1
+
+if (b<=1){
+  a = 2;
+}
+
+else {a = a;
+}
+
+console.log(a)
+
+// return (a);
 
 
 
@@ -46,8 +75,14 @@ Do the following:
    HINT: look up the Number method
 */
 
+let Text = "1999"
+console.log(Text)
+console.log(Text + Text)
+// return Number (Text);
+console.log(Number (Text));
+console.log(Number (Text) + Number (Text));
 
-
+// return Number (Text) + Number (Text);
 
 /*
 Task 1d - Multiply
@@ -58,11 +93,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+    return a*b;
+}
 
-
+console.log(multiply(3,8));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,11 +109,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
 
-
+console.log(dogYears(3))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -107,11 +142,40 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weightLBS, ageYears){
+  if (ageYears<1){
+    if (ageYears<=(4/12)){
+      return .1*weightLBS;
+    }
+    if (ageYears<=(7/12)){
+      return .05*weightLBS;
+    }
+    if (ageYears<(1)){
+      return .04*weightLBS;
+    }
+
+  }
+  else{
+   
+    if (weightLBS<=5){
+      return .05 * weightLBS;
+    }
+    if (weightLBS<=10){
+      return .04 * weightLBS;
+    }
+    if (weightLBS<=10){
+      return .04*weightLBS;
+    }
+    if (weightLBS<=15){
+      return (.03*weightLBS);
+    }
+    else{
+      return (.02*weightLBS)
+    }
   }
 
-
+}
+ console.log(hungryDog(15,1))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -132,10 +196,27 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+
+
 function game(user, computer){
-    /*add your code here*/
+
+if (user===computer){
+ return "it's a tie";
 }
-  
+
+if (user===1 && computer===1||user===0 && computer===1||user===-1 && computer===0){
+ return "you win!";
+}
+
+if (user===-1 && computer===1 ||user===0 && computer===-1||user===1 && computer===0){
+ return "you lose!";
+}
+
+}
+
+
+
+console.log(game(1,Math.random(-1,0,1)));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -231,15 +312,15 @@ function foo(){
     console.log('its working');
     return 'bar';
 }
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade
+// }
