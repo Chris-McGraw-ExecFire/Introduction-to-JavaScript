@@ -196,10 +196,27 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+
+
 function game(user, computer){
-    /*add your code here*/
+
+if (user===computer){
+ return "it's a tie";
 }
-  
+
+if (user===1 && computer===1||user===0 && computer===1||user===-1 && computer===0){
+ return "you win!";
+}
+
+if (user===-1 && computer===1 ||user===0 && computer===-1||user===1 && computer===0){
+ return "you lose!";
+}
+
+}
+
+
+
+console.log(game(1,Math.random(-1,0,1)));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
