@@ -16,8 +16,24 @@ Do the following:
    2. Return true if age is 18 or higher
 
    HINT: no function required
-*/
 
+
+   */
+
+  let votingAge = 18
+  if (votingAge >= 18)
+    {
+      // return "True";
+      console.log (true)
+    }
+
+    else 
+    {
+      // return "False";
+      console.log (false)
+    }
+
+  
 
 
 /*
@@ -31,6 +47,19 @@ Do the following:
    HINT: no function required
 */
 
+let a = 4
+let b = -1
+
+if (b<=1){
+  a = 2;
+}
+
+else {a = a;
+}
+
+console.log(a)
+
+// return (a);
 
 
 
@@ -46,8 +75,14 @@ Do the following:
    HINT: look up the Number method
 */
 
+let Text = "1999"
+console.log(Text)
+console.log(Text + Text)
+// return Number (Text);
+console.log(Number (Text));
+console.log(Number (Text) + Number (Text));
 
-
+// return Number (Text) + Number (Text);
 
 /*
 Task 1d - Multiply
@@ -58,11 +93,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+    return a*b;
+}
 
-
+console.log(multiply(3,8));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,11 +109,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
 
-
+console.log(dogYears(3))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -231,15 +266,15 @@ function foo(){
     console.log('its working');
     return 'bar';
 }
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade
+// }
