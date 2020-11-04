@@ -291,10 +291,21 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(bottlesBeer){
+ bottlesBeer = 99;
+  for(bottlesBeer;bottlesBeer>=1;bottlesBeer--){
+    if(bottlesBeer===1){
+      return `${bottlesBeer} bottle of soda on the wall, ${bottlesBeer} bottle of soda, take one down pass it around ${bottlesBeer-1} bottles of soda on the wall`
+    }
+    else{
+ return `${bottlesBeer} bottles of soda on the wall, ${bottlesBeer} bottles of soda, take one down pass it around ${bottlesBeer-1} bottles of soda on the wall`
   }
 
+
+}
+
+}
+console.log(annoyingSong())
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -322,7 +333,7 @@ function grade(numGrade){
   }
 
   else if (numGrade >= 70){
-    return "c";
+    return "C";
   }
 
   else if (numGrade >= 60){
